@@ -1,6 +1,6 @@
 # LinuxDeck — landing page
 
-Exercício de front-end desenvolvido com **HTML, CSS e JavaScript puros**, inspirado na direção visual do [Dokke](https://dokke.vercel.app/). O conteúdo, os elementos gráficos e a implementação foram adaptados para o LinuxDeck.
+Exercício de front-end desenvolvido com **HTML, CSS e JavaScript puros**, O conteúdo, os elementos gráficos e a implementação foram adaptados para o LinuxDeck.
 
 ## Como visualizar
 
@@ -24,11 +24,6 @@ favicon.svg   Ícone do projeto
 
 **Os botões de download não possuem links nem baixam arquivos.** O painel é uma simulação com dados fictícios: não abre aplicativos, não reproduz áudio e não monitora o computador. A página não utiliza APIs, bibliotecas, fontes externas ou ferramentas de build.
 
-## Publicar no GitHub Pages
-
-Para usar como um repositório independente de exercícios, envie o conteúdo desta pasta para a raiz de um novo repositório. No GitHub, ative **Settings → Pages → Deploy from a branch**, selecione a branch e a pasta **/(root)**. Todos os caminhos dos arquivos são relativos.
-
-Este exercício não é uma publicação oficial nem possui vínculo com o projeto Dokke.
 
 ## Padrão visual
 
