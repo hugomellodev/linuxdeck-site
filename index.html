@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LinuxDeck: seu Linux a um toque de distância. Landing page conceitual desenvolvida com HTML, CSS e JavaScript."
+    />
+    <meta name="theme-color" content="#edf4de" />
+    <title>LinuxDeck — Seu Linux. Na palma da mão.</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <svg
+      class="svg-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="i-grid" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="7" height="7" rx="2" />
+        <rect x="14" y="3" width="7" height="7" rx="2" />
+        <rect x="3" y="14" width="7" height="7" rx="2" />
+        <path d="M16 14h3v4h3l-4.5 4-4.5-4h3z" />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+      </symbol>
+      <symbol id="i-terminal" viewBox="0 0 24 24">
+        <path d="m5 6 6 6-6 6m8 0h6" />
+      </symbol>
+      <symbol id="i-android" viewBox="0 0 24 24">
+        <path d="m7 5-2-3m12 3 2-3M3 13a9 9 0 0 1 18 0z" />
+        <circle cx="8" cy="9" r=".7" />
+        <circle cx="16" cy="9" r=".7" />
+        <path d="M3 16h18M7 19v2m10-2v2" />
+      </symbol>
+      <symbol id="i-wifi" viewBox="0 0 24 24">
+        <path
+          d="M2 8a16 16 0 0 1 20 0M5 12a11 11 0 0 1 14 0m-11 4a6 6 0 0 1 8 0"
+        />
+        <circle cx="12" cy="20" r="1" />
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24">
+        <path d="m8 4 12 8-12 8z" />
+      </symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24">
+        <path d="M8 4v16M16 4v16" />
+      </symbol>
+      <symbol id="i-next" viewBox="0 0 24 24">
+        <path d="m4 4 12 8-12 8zM20 4v16" />
+      </symbol>
+      <symbol id="i-volume" viewBox="0 0 24 24">
+        <path
+          d="M3 9h4l5-5v16l-5-5H3zM16 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"
+        />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18" />
+      </symbol>
+      <symbol id="i-browser" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M3 12h18M12 3c-6 6-6 12 0 18 6-6 6-12 0-18z" />
+      </symbol>
+      <symbol id="i-music" viewBox="0 0 24 24">
+        <path d="M9 18V5l12-3v13M9 8l12-3" />
+        <ellipse cx="5" cy="18" rx="4" ry="3" />
+        <ellipse cx="17" cy="15" rx="4" ry="3" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="brand" href="#inicio" aria-label="LinuxDeck, início"
+          ><svg class="brand-icon"><use href="#i-grid" /></svg>Linux<span
+            >Deck</span
+          ><span class="beta">BETA</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#recursos">Recursos</a
+          ><a href="#como-funciona">Como funciona</a
+          ><a href="#perguntas">Perguntas</a
+          ><a href="#experimentar" class="nav-cta"
+            >Experimente <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="keycap" aria-hidden="true">
+            <div class="keycap-face">
+              <svg><use href="#i-grid" /></svg><span>LINUXDECK</span>
+            </div>
+          </div>
+          <p class="eyebrow">
+            <span class="status-dot"></span> SEU COMPUTADOR. UM NOVO JEITO DE
+            USAR.
+          </p>
+          <h1 id="hero-title">
+            Seu Linux.<br />Na palma da
+            <span class="hand"
+              >mão<svg viewBox="0 0 300 20" aria-hidden="true">
+                <path d="M3 13Q140 0 292 10M8 18Q150 5 281 15" /></svg></span
+            >.
+          </h1>
+          <p class="hero-description">
+            Dê uma nova função ao seu celular. Abra apps, controle a música<br
+              class="desktop-break"
+            />
+            e acompanhe seu PC. Tudo a um toque, na mesma rede.
+          </p>
+          <div class="hero-actions">
+            <button
+              class="button button-dark"
+              type="button"
+              data-demo-download="Linux"
+            >
+              <svg><use href="#i-terminal" /></svg>Baixar para Linux<svg
+                class="button-arrow"
+              >
+                <use href="#i-download" />
+              </svg></button
+            ><span class="plus" aria-hidden="true">+</span
+            ><button
+              class="button button-light"
+              type="button"
+              data-demo-download="Android"
+            >
+              <svg><use href="#i-android" /></svg>Baixar para Android
+            </button>
+          </div>
+          <p class="compatibility">
+            Linux + Android <span>·</span> Sem conta <span>·</span> Sem nuvem
+            <span>·</span> Do seu jeito
+          </p>
+          <a href="#experimentar" class="hero-scroll"
+            >Conheça seu próximo atalho <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+
+      <section
+        class="showcase section"
+        id="experimentar"
+        aria-labelledby="demo-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / MENOS CLIQUES. MAIS CONTROLE.</p>
+            <h2 id="demo-title">
+              Um celular parado.<br />Um mundo de possibilidades.
+            </h2>
+          </div>
+          <p>
+            Aquele Android na gaveta pode virar seu painel de controle favorito.
+            Toque nos botões e experimente uma prévia.
+          </p>
+        </div>
+        <div class="demo-stage">
+          <div class="demo-copy">
+            <span class="small-pill"
+              ><span class="status-dot"></span> DEMONSTRAÇÃO INTERATIVA</span
+            >
+            <h3>Seu setup.<br />Mais perto.</h3>
+            <p>Troque de workspace.<br />Encontre seu ritmo.</p>
+            <div
+              class="workspace-tabs"
+              role="group"
+              aria-label="Escolha um workspace"
+            >
+              <button type="button" data-workspace="apps" aria-pressed="true">
+                01 <span>Apps</span><span>↗</span></button
+              ><button
+                type="button"
+                data-workspace="music"
+                aria-pressed="false"
+              >
+                02 <span>Música</span><span>↗</span></button
+              ><button
+                type="button"
+                data-workspace="monitor"
+                aria-pressed="false"
+              >
+                03 <span>Monitor</span><span>↗</span>
+              </button>
+            </div>
+            <p class="demo-note">
+              Uma prévia no navegador.<br />Seus apps de verdade ficam no seu
+              Linux.
+            </p>
+          </div>
+          <div class="device-wrap">
+            <div class="phone">
+              <div class="phone-camera" aria-hidden="true"></div>
+              <div class="phone-header">
+                <span
+                  ><svg class="brand-icon"><use href="#i-grid" /></svg>
+                  Linux<span class="thin">Deck</span></span
+                ><span class="phone-clock">09:41</span>
+              </div>
+              <div class="phone-title">
+                <span>SEU ESPAÇO, SEU RITMO</span>
+                <h4 id="workspace-title">Seus aplicativos.</h4>
+              </div>
+              <div class="deck-grid" id="demo-deck"></div>
+              <div class="demo-feedback" id="demo-feedback" role="status">
+                Toque em um botão para experimentar.
+              </div>
+              <div class="phone-status">
+                <span class="status-dot"></span>
+                <div>
+                  Conectado ao seu Linux<small
+                    >Mesma rede. Tudo por perto.</small
+                  >
+                </div>
+                <svg><use href="#i-wifi" /></svg>
+              </div>
+              <div class="phone-bottom">
+                <span>LINUXDECK / SEU CONTROLE</span
+                ><span id="workspace-count">01 — 03</span>
+              </div>
+            </div>
+            <span class="floating-label"
+              ><svg><use href="#i-check" /></svg> Mais um motivo para guardar
+              esse celular.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="features section"
+        id="recursos"
+        aria-labelledby="features-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / PEQUENO NA TELA. GRANDE NA ROTINA.</p>
+            <h2 id="features-title">O que você usa.<br />Bem onde precisa.</h2>
+          </div>
+          <p>
+            Um espaço para os pequenos comandos que fazem diferença no seu dia.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card feature-wide">
+            <span class="card-number">01</span>
+            <div class="app-orbit" aria-hidden="true">
+              <span class="app-tile orange"
+                ><svg><use href="#i-browser" /></svg></span
+              ><span class="app-tile violet"
+                ><svg><use href="#i-code" /></svg></span
+              ><span class="app-tile green"
+                ><svg><use href="#i-music" /></svg></span
+              ><span class="app-tile blue">A<span>✦</span></span>
+            </div>
+            <h3>Seus apps, a um toque.</h3>
+            <p>
+              Navegador, editor, estudos. Deixe seus favoritos juntos e abra no
+              computador sem interromper o que está fazendo.
+            </p>
+            <span class="card-tag">MAIS FLUXO. MENOS ALT + TAB.</span>
+          </article>
+          <article class="feature-card">
+            <span class="card-number">02</span>
+            <div class="network-visual" aria-hidden="true">
+              <span>PC</span><i></i><svg><use href="#i-wifi" /></svg><i></i
+              ><span>VOCÊ</span>
+            </div>
+            <h3>A conexão é de vocês.</h3>
+            <p>
+              Computador e celular conversam pela rede local. Sem criar uma
+              conta. Sem mandar sua rotina para a nuvem.
+            </p>
+            <span class="card-tag">LOCAL POR NATUREZA.</span>
+          </article>
+          <article class="feature-card">
+            <span class="card-number">03</span>
+            <div class="music-visual" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span
+              ><span></span><span></span><span></span><span></span><span></span
+              ><span></span><span></span>
+            </div>
+            <h3>O play no seu ritmo.</h3>
+            <p>
+              Pause, avance ou ajuste o volume. Sua trilha sonora acompanha o
+              trabalho sem disputar espaço na tela.
+            </p>
+            <span class="card-tag">SÓ MAIS UMA MÚSICA.</span>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="how-section"
+        id="como-funciona"
+        aria-labelledby="how-title"
+      >
+        <div class="section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 / DO PRIMEIRO ENCONTRO À ROTINA.</p>
+              <h2 id="how-title">Conectou uma vez.<br />Depois, é só abrir.</h2>
+            </div>
+            <p>
+              Nada de digitar um código toda vez. Seu celular lembra do seu
+              computador.
+            </p>
+          </div>
+          <div class="steps">
+            <article>
+              <span class="step-number">01</span>
+              <h3>Prepare o seu Linux.</h3>
+              <p>
+                Deixe o servidor rodando no computador. Ele pode iniciar junto
+                com sua sessão.
+              </p>
+            </article>
+            <article>
+              <span class="step-number">02</span>
+              <h3>Abra no celular.</h3>
+              <p>
+                Na mesma rede Wi-Fi, o app encontra seu PC. Autorize o primeiro
+                acesso no computador.
+              </p>
+            </article>
+            <article>
+              <span class="step-number">03</span>
+              <h3>Faça disso um hábito.</h3>
+              <p>
+                Na próxima vez, basta abrir o app. Seu painel está ali, pronto
+                para acompanhar você.
+              </p>
+            </article>
+          </div>
+          <div class="connection-note">
+            <svg><use href="#i-wifi" /></svg
+            ><span>Uma rede em comum. Um setup mais seu.</span
+            ><span class="status-dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section" id="perguntas" aria-labelledby="faq-title">
+        <div>
+          <p class="eyebrow">04 / ANTES DO PRIMEIRO TOQUE.</p>
+          <h2 id="faq-title">Sem mistério.<br />Sem surpresa.</h2>
+          <p>Algumas respostas para<br />chegar e se sentir em casa.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>
+              Posso usar um celular antigo?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Sim. O LinuxDeck foi pensado para Android 6.0 ou superior, com o
+              Android System WebView atualizado. O desempenho pode variar
+              conforme o aparelho.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Preciso estar na mesma rede Wi-Fi?<span aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Sim. O celular precisa alcançar o computador pela rede local. O PC
+              pode estar conectado por cabo ao mesmo roteador. Algumas redes de
+              convidados bloqueiam essa comunicação.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Vou precisar de um código toda vez?<span aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Não. Você autoriza o celular no computador no primeiro acesso.
+              Depois, o app lembra da conexão. Apagar os dados ou reinstalar o
+              app pode exigir uma nova autorização.
+            </p>
+          </details>
+          <details>
+            <summary>
+              O computador precisa ficar ligado?<span aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Sim. O computador precisa estar ligado e com o servidor LinuxDeck
+              ativo para receber os comandos.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="closing section">
+        <div class="mini-key" aria-hidden="true">
+          <svg><use href="#i-grid" /></svg>
+        </div>
+        <p class="eyebrow">UM NOVO LUGAR PARA OS SEUS ATALHOS.</p>
+        <h2>Menos distância.<br />Mais possibilidades.</h2>
+        <a class="button button-dark" href="#experimentar"
+          >Experimente o LinuxDeck<svg><use href="#i-arrow" /></svg
+        ></a>
+        <p>O seu Linux merece esse toque.</p>
+      </section>
+    </main>
+    <footer class="footer section">
+      <a class="brand" href="#inicio"
+        ><svg class="brand-icon"><use href="#i-grid" /></svg>Linux<span
+          >Deck</span
+        ></a
+      >
+      <p>Feito para o seu setup. Construído para aprender.</p>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> LinuxDeck · Projeto de estudo</span>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+      <svg><use href="#i-code" /></svg>
+      <p></p>
+      <button type="button" aria-label="Fechar aviso">×</button>
+    </div>
+  </body>
+</html>
